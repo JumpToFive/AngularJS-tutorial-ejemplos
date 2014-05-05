@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+</head>
+<body ng-app ng-controller="controller">
+
+    <H1>Lista de la compra</H1>
+    <form ng-submit="submit(message)" class="form-inline">
+        <input type="text" ng-model="message" autofocus>
+        <button class="btn">A&ntilde;adir</button>
+    </form>
+
+    <div id="lista" >
+        <ul ng-repeat="elemento in lista">
+            <li>{{elemento}}</li>
+        </ul>
+    </div>
+</body>
+</html>
